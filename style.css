@@ -28,3 +28,14 @@ body {
   position: absolute;
   transition: 1s;
 }
+
+.btn {
+  height: 20vh;
+  width: 10vw;
+  font-size: 10rem;
+}
+
+section {
+  display: flex;
+  align-items: center;
+}
