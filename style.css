@@ -10,6 +10,7 @@ body {
   display: flex;
   height: 100vh;
   background-color: #6e7dab;
+  flex-direction: column;
 }
 
 .slider-wrapper {
@@ -38,4 +39,29 @@ body {
 section {
   display: flex;
   align-items: center;
+}
+
+.circle-wrapper {
+  margin: 50px auto;
+  width: 200px;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.circle {
+  height: 25px;
+  width: 25px;
+  border: 1px solid #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.circle:hover {
+  background-color: #bbb;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #bbb;
 }
