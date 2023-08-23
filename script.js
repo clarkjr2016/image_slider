@@ -6,11 +6,10 @@ let counter = 0;
 
 circles.forEach((circle) => {
   circle.addEventListener("click", (e) => {
-    if (e.target) {
-      circle.classList.toggle("active");
-    } else {
-      circle.style.backgroundColor = "transparent";
-    }
+    circles.forEach((circle) => {
+      circle.classList.remove("active");
+    });
+    circle.classList.add("active");
   });
 });
 
